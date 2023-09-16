@@ -16,7 +16,7 @@
   // }
 </script>
 <template>
-  <section class="pb-12 pt-24">
+  <section class="bg-slate-50 pb-12 pt-24">
     <div class="container mx-auto px-4 space-y-12">
       <div class="flex flex-wrap -mx-4 items-center">
         <div class="p-4 w-full lg:w-6/12">
@@ -95,7 +95,7 @@
                 <h4 class="font-medium mb-2 text-gray-900 text-xl">
                   Best Service
                 </h4>
-                <h3>
+                <h3 class="text-neutral-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h3>
               </div>
@@ -197,7 +197,7 @@
                 <h4 class="font-medium mb-2 text-gray-900 text-xl">
                   Healthy &amp; Organic
                 </h4>
-                <h3>
+                <h3 class="text-neutral-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h3>
               </div>
@@ -221,7 +221,7 @@
                 <h4 class="font-medium mb-2 text-gray-900 text-xl">
                   24/7 Delivery
                 </h4>
-                <h3>
+                <h3 class="text-neutral-700">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </h3>
               </div>
