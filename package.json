@@ -4,7 +4,7 @@
   "homepage": "https://rad-froyo-23068a.netlify.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-iles-tailwindcss.git"
+    "url": "https://github.com/pinegrow/vuepizza-iles.git"
   },
   "scripts": {
     "dev": "iles dev",
