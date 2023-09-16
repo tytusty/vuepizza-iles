@@ -2,10 +2,6 @@
     title: Home
 </page>
 <template>
-  <main>
-    <HeroSection />
-    <AboutTemplate />
-    <WalkThrough />
-  </main>
+  <main></main>
 </template>
 <style scoped></style>

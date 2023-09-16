@@ -3,7 +3,7 @@ export default {
   description: 'Vue Designer îles Tailwind CSS - Quick start template',
   author: 'Pinegrow',
   nav: [
-    { text: 'Home', link: '/' },
+    { text: 'Homepage', link: '/' },
     { text: `Quick Start`, link: '/quick-start' },
     { text: 'Subscribe', link: '/subscribe' },
   ],
