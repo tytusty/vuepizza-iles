@@ -1,9 +1,9 @@
-// import {createHead} from '@vueuse/head'
+// import {createHead} from "@vueuse/head"
 
-import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
+//import checkDarkTheme from "@/composables/dark-color-scheme-check?raw"
 
 import type { Script } from '@unhead/schema'
-type TurboScript = Script & { once: true }
+//type TurboScript = Script & { once: true }
 
 export const headConfig = ({ frontmatter, site }) => {
   return {
@@ -20,8 +20,8 @@ export const headConfig = ({ frontmatter, site }) => {
       { property: 'keywords', content: computed(() => frontmatter.tags) },
     ],
     script: [
-      { innerHTML: checkDarkTheme, once: true } as TurboScript,
-      { src: '/pgia/lib/pgia.js', tagPosition: 'bodyClose' },
+      /*{ children: checkDarkTheme, once: true } as TurboScript,*/
+      { src: 'pgia/lib/pgia.js', tagPosition: 'bodyClose' },
     ],
   }
 }
