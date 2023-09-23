@@ -9,7 +9,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 // import myIlesModule from './src/modules/my-module'
 
 export default defineConfig({
-  siteUrl: 'https://pg-iles-tailwindcss.netlify.app',
+  siteUrl: 'https://rad-froyo-23068a.netlify.app/',
   // turbo: true,
   jsx: 'preact', // 'solid', 'react', 'vue'
   svelte: true,
