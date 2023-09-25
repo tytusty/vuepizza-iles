@@ -30,14 +30,22 @@
   // }
 </script>
 <template>
-    <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
-        <div class="bg-white border px-6 py-12 rounded-md text-center text-gray-400">
-            <img class="mb-4 mx-auto rounded-md w-full sm:w-10/12" alt="..." width="600" height="600" :src="image"/>
-            <h4 class="font-bold mb-2 text-gray-900 text-xl">{{ name }}</h4>
-            <p class="mb-2 text-sm">{{ description }}</p>
-            <p class="font-semibold font-serif mb-4 text-primary-500">{{ price }}</p>
-            <BaseButton label="Order Now"></BaseButton>
-        </div>
+  <div class="p-3 w-full md:w-6/12 lg:w-4/12 xl:w-3/12">
+    <div
+      class="bg-white border px-6 py-12 rounded-md text-center text-gray-400"
+    >
+      <img
+        class="mb-4 mx-auto rounded-md w-full sm:w-10/12"
+        alt="..."
+        width="600"
+        height="600"
+        :src="image"
+      />
+      <h4 class="font-bold mb-2 text-gray-900 text-xl">{{ name }}</h4>
+      <p class="mb-2 text-sm">{{ description }}</p>
+      <p class="font-semibold font-serif mb-4 text-primary-500">{{ price }}</p>
+      <BaseButton label="Order Now"></BaseButton>
     </div>
+  </div>
 </template>
 <style scoped></style>

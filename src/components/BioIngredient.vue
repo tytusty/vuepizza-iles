@@ -8,6 +8,10 @@
       type: String,
       default: 'Farina del sacco',
     },
+    icon: {
+      type: String,
+      default: 'i-material-symbols-360-rounded',
+    },
   })
 
   //
@@ -22,11 +26,20 @@
   // }
 </script>
 <template>
-    <li class="flex flex-col ingredient items-center">
-        <div class="aspect-square border-2 border-solid font-black font-sans mb-3 p-5 rounded-full text-3xl text-center text-green-950 w-24">
-            <h5 class="inline-block">{{ number }}</h5>
-        </div>
-        <p class="font-bold leading-tight text-teal-900 text-xl">{{ name }}</p>
-    </li>
+  <li class="flex flex-col ingredient items-center">
+    <div
+      class="aspect-square border-2 border-solid flex flex-col font-black font-sans items-center justify-center mb-3 p-5 rounded-full text-3xl text-center text-green-950 w-24"
+    >
+      <h5 class="inline-block">{{ number }}</h5>
+      <BaseIcon
+        :name="icon"
+        class="mt-1 text-teal-700"
+        height="28px"
+      ></BaseIcon>
+    </div>
+    <p class="flex flex-col font-bold leading-tight text-teal-900 text-xl">
+      {{ name }}
+    </p>
+  </li>
 </template>
 <style language="scss" scoped></style>
