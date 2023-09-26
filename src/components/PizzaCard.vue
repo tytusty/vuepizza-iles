@@ -44,7 +44,11 @@
       <h4 class="font-bold mb-2 text-gray-900 text-xl">{{ name }}</h4>
       <p class="mb-2 text-sm">{{ description }}</p>
       <p class="font-semibold font-serif mb-4 text-primary-500">{{ price }}</p>
-      <BaseButton label="Order Now"></BaseButton>
+      <BaseButton label="Order Now" size="md">
+        <template #trailing>
+          <BaseIcon name="i-ic-sharp-shopping-bag" width="20px"></BaseIcon>
+        </template>
+      </BaseButton>
     </div>
   </div>
 </template>
