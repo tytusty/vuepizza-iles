@@ -57,6 +57,12 @@
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
   ]
+
+  const cart = []
+  const addToCart = (pizza) => {
+    console.log(pizza + ' added to cart')
+    cart.push(pizza)
+  }
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
@@ -81,6 +87,7 @@
             :image="pizza.image"
             :name="pizza.name"
             :price="pizza.price"
+            @add-to-cart="addToCart(pizza)"
           />
         </div>
         <div>
