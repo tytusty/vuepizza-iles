@@ -18,14 +18,8 @@
   ]
 </script>
 <template>
-  <ul class="flex flex-wrap gap-x-12 gap-y-6 ingregients justify-center">
-    <BioIngredient
-      v-for="(ingredient, index) in bioIngredients"
-      :key="index"
-      :name="ingredient.name"
-      :number="ingredient.number"
-      :icon="ingredient.icon"
-    />
-  </ul>
+    <ul class="flex flex-wrap gap-x-12 gap-y-6 ingregients justify-center">
+        <BioIngredient v-for="(ingredient, index) in bioIngredients" :key="index" :name="ingredient.name" :number="ingredient.number" :icon="ingredient.icon"/>
+    </ul>
 </template>
 <style scoped></style>
