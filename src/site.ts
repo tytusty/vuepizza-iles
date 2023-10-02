@@ -1,10 +1,11 @@
 export default {
-  title: 'Vue Designer',
-  description: 'Vue Designer - The beginning',
-  author: 'Tytus and Pinegrow',
+  title: 'Tus Designer',
+  description: 'Tus Designer - The beginning',
+  author: "Tytus and Pine's",
   nav: [
-    { text: 'Homepage', link: '/' },
-    { text: 'Quick Start', link: '/quick-start' },
-    { text: 'Subscribe', link: '/subscribe' },
+    { text: 'Home', link: '/' },
+    { text: 'Menu', link: '/menu' },
+    { text: 'Order!', link: '/order' },
+    { text: 'About Us', link: '/about-us' },
   ],
 }

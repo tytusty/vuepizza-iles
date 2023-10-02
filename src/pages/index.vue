@@ -1,5 +1,5 @@
 <page>
-    title: Home
+    title: Casa
 </page>
 <template>
   <main>

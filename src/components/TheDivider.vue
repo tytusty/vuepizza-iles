@@ -16,7 +16,7 @@
   // }
 </script>
 <template>
-  <div class="container mx-auto p-4 w-1/2" data-pg-collapsed>
+  <div class="container mx-auto p-4 w-1/2">
     <hr class="border-gray-200" />
   </div>
 </template>

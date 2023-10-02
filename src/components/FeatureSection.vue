@@ -16,12 +16,12 @@
   // }
 </script>
 <template>
-  <section class="bg-slate-50 pb-12 pt-24">
+  <section class="pb-12 pt-24">
     <div class="container mx-auto px-4 space-y-12">
       <div class="flex flex-wrap -mx-4 items-center">
         <div class="p-4 w-full lg:w-6/12">
           <h2 class="mb-2 text-2xl text-primary-500">Welcom to Pizzeria</h2>
-          <h3 class="font-bold mb-2 text-4xl text-gray-900">
+          <h3 class="font-bold mb-2 text-4xl">
             Indulge Yourself With the Delicacy of Our Pizza
           </h3>
           <p class="mb-6">
