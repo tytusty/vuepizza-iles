@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { ref } from 'vue'
   const pizzas = [
     {
       name: 'Ciccio Pissa',
@@ -58,25 +59,24 @@
     },
   ]
 
-  const cart = []
+  const cart = ref([])
   const addToCart = (pizza) => {
     console.log(pizza + ' added to cart')
-    cart.push(pizza)
+    cart.value.push(pizza)
   }
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
-    <div class="container mx-auto px-4 relative">
-      <BaseButton
-        label="My Button"
-        class="bottom-40 right-0 sticky top-12"
-        size="lg"
-        leading-icon="i-material-symbols-shopping-basket"
-        style="transform: translateY(50%)"
-      >
-        <span>Cart Items — {{ cart.length }}</span>
-      </BaseButton>
-      <div class="bg-gray-50 px-12 py-16 rounded-lg text-gray-400">
+    <div class="container mx-auto px-4">
+      <div class="bg-gray-50 px-12 py-16 relative rounded-lg text-gray-400">
+        <BaseButton
+          label="My Button"
+          class="bg-neutral-50 duration-75 ease-out mb-10 right-0 sticky top-12 transition-all z-10"
+          size="lg"
+          leading-icon="i-material-symbols-shopping-basket"
+          variant="outline"
+          ><span>Cart Items — {{ cart.length }}</span>
+        </BaseButton>
         <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
           <div class="px-4 text-center w-full md:w-10/12 xl:w-9/12">
             <h2 class="font-medium mb-1 text-primary-500">Our Menu</h2>
@@ -103,7 +103,7 @@
           <BaseButton label="Full Menu" size="lg"></BaseButton>
         </div>
       </div>
-      <div class="bioIngredients max-w-screen-lg mx-auto py-12 md:flex">
+      <div class="bioIngredients max-w-screen-lg mx-auto py-12 z-10 md:flex">
         <div class="border-solid border-t pt-8 title mx-8 my-4 pb-4">
           <div class="flex flex-col gap-4 items-center title-container">
             <div class="bio-icon-container border-2 p-5 rounded-lg">
