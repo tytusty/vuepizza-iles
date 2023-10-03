@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import { ref } from 'vue'
   const pizzas = [
     {
       name: 'Ciccio Pissa',
@@ -74,6 +73,7 @@
           class="bg-neutral-50 duration-75 ease-out mb-10 right-0 sticky top-12 transition-all z-10"
           size="lg"
           leading-icon="i-material-symbols-shopping-basket"
+          data-pg-collapsed
           variant="outline"
           ><span>Cart Items — {{ cart.length }}</span>
         </BaseButton>
@@ -103,7 +103,10 @@
           <BaseButton label="Full Menu" size="lg"></BaseButton>
         </div>
       </div>
-      <div class="bioIngredients max-w-screen-lg mx-auto py-12 z-10 md:flex">
+      <div
+        class="bioIngredients max-w-screen-lg mx-auto py-12 z-10 md:flex"
+        data-pg-collapsed
+      >
         <div class="border-solid border-t pt-8 title mx-8 my-4 pb-4">
           <div class="flex flex-col gap-4 items-center title-container">
             <div class="bio-icon-container border-2 p-5 rounded-lg">
