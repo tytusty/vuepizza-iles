@@ -1,4 +1,5 @@
 <script setup lang="ts">
+  import { useCart } from '@/composables/cart'
   const pizzas = [
     {
       name: 'Ciccio Pissa',
@@ -57,34 +58,13 @@
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
   ]
-
-  const cart = ref([])
-  const addToCart = (pizza) => {
-    console.log(pizza + ' added to cart')
-    cart.value.push(pizza)
-  }
-
-  const cartText = computed(() => {
-    const displayText =
-      cart.value.length === 0
-        ? 'Cart is empty'
-        : `Total ${cart.value.length} items`
-    return displayText
-  })
+  const { addToCart } = useCart()
 </script>
 <template>
   <section class="pb-24 pt-12 text-center text-gray-50">
     <div class="container mx-auto px-4">
       <div class="bg-gray-50 px-12 py-16 relative rounded-lg text-gray-400">
-        <BaseButton
-          label="My Button"
-          class="bg-neutral-50 duration-75 ease-out mb-10 right-0 sticky top-12 transition-all z-10"
-          size="lg"
-          leading-icon="i-material-symbols-shopping-basket"
-          data-pg-collapsed
-          variant="outline"
-          ><span>{{ cartText }}</span>
-        </BaseButton>
+        <FloatingCart></FloatingCart>
         <div class="-mx-4 flex flex-wrap items-center justify-center mb-12">
           <div class="px-4 text-center w-full md:w-10/12 xl:w-9/12">
             <h2 class="font-medium mb-1 text-primary-500">Our Menu</h2>
