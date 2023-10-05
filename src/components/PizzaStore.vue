@@ -1,5 +1,15 @@
 <script setup lang="ts">
-  import { pizzas } from '~~/db.json'
+  // import { pizzas } from '~~/db.json'
+  // import { $fetch } from 'ofetch'
+  // const pizzas = await $fetch(
+  //   'https://my-json-server.typicode.com/Pinegrow/pizzaria-iles/pizzas',
+  // )
+  defineProps({
+    pizzas: {
+      type: Array,
+      default: () => [],
+    },
+  })
   const { addToCart } = useCart()
 </script>
 <template>
