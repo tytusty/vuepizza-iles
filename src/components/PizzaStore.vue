@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  import { useCart } from '@/composables/cart'
   const pizzas = [
     {
       name: 'Ciccio Pissa',
